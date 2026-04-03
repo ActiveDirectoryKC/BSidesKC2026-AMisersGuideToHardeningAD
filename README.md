@@ -14,5 +14,5 @@ While I strive to make sure all content here is accurate, I am not infallable. P
 The views and ideas presented in this document/documents are my own and are not a reflection or an endorsement by my employer or employers. Vendors were not consulted before their products were mentioned so any recommendations or reviews are solely my own. 
 
 ## LLM Disclosure
-I wrote all of this myself. I did use LLMs to check the content, help me organize, and proof, but all the content is 100% mine. Any images used fall under fair use and attributes are included in the [attributions.md] file. 
+I wrote all of this myself. I did use LLMs to check the content, help me organize, and proof, but all the content is 100% mine. Any images used fall under fair use and attributions are included in the [attributions.md](https://github.com/ActiveDirectoryKC/BSidesKC2026-AMisersGuideToHardeningAD/blob/main/Attributions.md) file. 
 All scripts are mine or attributed to their authors. 
