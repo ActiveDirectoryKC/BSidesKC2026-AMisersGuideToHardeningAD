@@ -30,7 +30,8 @@ Before I go too far I want to make a couple of things clear.
  
 Executives seem to glaze over when I bring up BCDR. I can understand why. BCDR isn't a new shiny dashboard with a big red wheel of "vulnerabilities" on it. It is boring, you either have them or you don't and few of us have the cycles to actually make sure they don't suck. 
 
-![[Pasted image 20260401231956.png]]
+![No Backups - Live Dangerously Meme](images/1_NoBackupsMeme.png)
+
 
 Here is the one area I'm going to say that you should break the Miser theme and straight up by a good BCDR solution for your directory. I'm not going to say from whom because I don't care at this point. Find me later if you want a real opinion. 
 
@@ -55,7 +56,7 @@ With those things in mind, here are my BCDR must haves.
 With those things in mind. I need to say something... SNAPSHOTS ARE NOT BACKUPS!
 VM Snapshots are not backups. They aren't. They are often part of a recovery solution, but they are not a recovery solution, despite what the vendor says. 
 
-![[Pasted image 20260401232410.png]]
+![Snapshots aren't backups argument - Meme](images/2_Snapshots_ArguingCatMeme.png)
 
 First of all, AD doesn't like snapshots that much. There are issues there, have been for a long time. 
 Secondly, that is putting your fabric/hypervisor administrators in the role of backup administrators and in a world of Zero Trust, I don't trust them! If you have separate roles for those teams. 
@@ -106,7 +107,7 @@ Nonetheless, it is true. If the system just doesn't work, it is no better than i
 
 When it comes to simple performance monitoring the easy answer for a lot of places is SCOM, Systems Center Operations Manager. If you have a System Center license, you have it even if it isn't deployed. This tool can monitor AD. I also hate everything about SCOM. 
 
-![[Pasted image 20260401233203.png]]
+![Microsoft SCOM is A Literal Bag Of Crap](images/3_SCOM_Crap_OfficeMeme.png)
 
 Another product that I recommend is Zabbix. It is a free tool with paid support that can extend it quite a bit. There are also tons and tons of tutorials and resources out there. The gotcha with Zabbix is that it is very Linux centric and most of the public AD resources are out-of-date or insufficient. I took it upon myself to develop templates for Zabbix around my wants and needs in AD. It is far from perfect, but trust me it is better than what I've seen.
 
@@ -150,7 +151,7 @@ Okay quick show of hands.
 - Who here actually was able to implement the best practices? 
 - Who here actually knew the best practices without looking it up first? 
 
-![[Pasted image 20260401233338.png]]
+![We Use Best Practices Sarcastic - Meme](images/4_BestPractices_Meme.png)
 
 Yeah. I've built literally hundreds of domains and several thousand DCs at this point and I cannot tell you all the best practices off the top of my head 
 
@@ -168,7 +169,7 @@ The downsides to MS Security Baselines are they are Windows-only, but you're in 
 ### DISA STIGs
 I could ask anyone who's used these raise their hands but this is not a game of Spot the Fed. 
 
-![[Pasted image 20260401233450.png]]
+![Spot the Fed Rally - Meme](images/5_SpotTheFedMeme)
 
 DISA STIGs are a type of baselining/benchmarking that is put out by the US Government for the US Government. I know that inspires tons of confidence, but give them a chance here. 
 
@@ -225,7 +226,7 @@ Pass-Keys = Good.
 MFA = Good. 
 Bad Password Lists = Great. 
 
-![[Pasted image 20260401233709.png]]
+![Obi-Wan Weak Password Will be Back in Greater Numbers - Meme](images/6_Obiwan_PasswordIsWeak_Meme)
 
 The problem with their recommends are two fold. First, most standards and auditing bodies haven't fully caught on and have outdated recommendations. The second is that some of these items are easier said than done, especially in smaller or less funded organizations. 
 
@@ -264,7 +265,7 @@ Lithnet does this all for free. It isn't as flashy as EPP but it get's the job d
 In case anyone is interested. This is my favorite of the bunch if you're staying on the cheap. EPP is better and has more support, but P1/P2 can get costly so Lithnet wins. 
 
 ### PassFiltEx
-![[Pasted image 20260401234216.png]]
+![PassFiltEx Clay Tablet - Meme](images/7_PassFiltEx_Tablet_Meme.png)
 
 This is the OG, whose first source was carved into clay tablets, password filter. It was written by Ryan Ries who is a legend at Microsoft and outside if you are kind of an identity nerd. He wrote this on his own and it is NOT a Microsoft tool.
 
@@ -275,7 +276,7 @@ That said it is open source, crazy simple, and does what is supposed to do. Chec
 ### Say the Weird Thing
 Okay, so someone is going to ask this question so I'm doing it now. 
 
-![[Pasted image 20260401234539.png]]
+![Say the Weird Thing Woman - Meme](images/8_SayTheWeirdThingMeme.png)
 
 > Can I have multiple password filters?
 
@@ -322,7 +323,7 @@ We spoke about the big ticket items. Here are some rapid-fire freebies that make
 
 > Scrooge Says: I don't want anyone to call into the help desk and the help desk not be able to reset any of their account passwords. 
 
-![[Pasted image 20260401234902.png]]
+![Office Space - Yeah if you could put in a help desk ticket - Meme](images/9_OfficeSpace_HelpDesk_Meme.png)
 
 Scrooge may sound nuts, but I worked somewhere where my manager insisted on domain admin rights and then got mad when he forgot his password and had to call the helpdesk, who I recently took out of domain admin. You can't make this stuff up. 
 
@@ -357,9 +358,8 @@ Microsoft tried to reduce some of the fallout from this with some things impleme
 
 Before you can fix these problems you need to know about them. Unfortunately Microsoft sucks at writing UIs for AD (and pretty much everything else). 
 
-![[Pasted image 20260401235234.png]]
+![The UI Is intuative - Someone licking a cup instead of drinking it - Meme](images/10_UIMeme.png)
 
-![[Pasted image 20260401235400.png]]
 
 However, the hive mind is strong and wise. There are a handful of tools that can do this to some degree for you so I encourage you to check those out. I will caution you though as pretty much every tool in this section has a good chance of flagging your AV/EDR software. Blue Team, Red Team, and Blackhat tools tend to overlap a lot on behavior and really only differ on motive. EDR doesn't get motive. 
 
