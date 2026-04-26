@@ -1,4 +1,5 @@
 # A Miser's Guide to Defending Active Directory
+Presented at BSides KC 2026 - 2026-04-26
 
 ## Summary
 Belief: It is costly and difficult to build a cyber resilience program to protect Active Directory. 
